@@ -1,12 +1,11 @@
 package com.hyunwoocho.hello;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:647-123-1234"));
         startActivity(myIntent);
     }
+
+    public void onButton3Clicked(View view) {
+        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+        startActivity(intent);
+    }
+
 }
 
 
